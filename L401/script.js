@@ -4,17 +4,14 @@ var mesame = prompt("მესამე რიცხვი: ");
 
 var numbers = [];
 
-function minimal (pirveli1,meore2,mesame3){
-    var pirveli1 = pirveli;
-    var meore2 = meore;
-    var mesame3 = mesame;
+function minimal (pirveli,meore,mesame){
 
-    var result = pirveli1;
+    var result = pirveli;
 
-    if (meore2 < result) result = meore2;
-    if (mesame3 < result) result = mesame3;
+    if (meore < result) result = meore;
+    if (mesame < result) result = mesame;
     return result;    
 }
 
 
-document.write(minimal());
+document.write(minimal(pirveli,meore,mesame));
