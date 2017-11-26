@@ -1,9 +1,3 @@
-var pirveli = prompt("პირველი რიცხვი: ");
-var meore = prompt("მეორე რიცხვი: ");
-var mesame = prompt("მესამე რიცხვი: ");
-
-var numbers = [];
-
 function minimal (pirveli,meore,mesame){
 
     var result = pirveli;
@@ -12,6 +6,10 @@ function minimal (pirveli,meore,mesame){
     if (mesame < result) result = mesame;
     return result;    
 }
+
+var pirveli = prompt("პირველი რიცხვი: ");
+var meore = prompt("მეორე რიცხვი: ");
+var mesame = prompt("მესამე რიცხვი: ");
 
 
 document.write(minimal(pirveli,meore,mesame));
